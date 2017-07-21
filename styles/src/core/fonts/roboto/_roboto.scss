@@ -1,0 +1,13 @@
+@import "compass";
+@import "core/core";
+
+$roboto-font-family: Roboto;
+$roboto-file-path: './assets/Roboto-Regular.ttf';
+$roboto-font-style: normal;
+
+@include font-face(
+	$name: #{$roboto-font-family},
+	$font-files: url($roboto-file-path),
+	$weight: $regular
+);
+

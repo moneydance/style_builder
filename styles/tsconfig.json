@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"module": "commonjs",
+		"sourceMap":true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"experimentalDecorators": true,
+		"module": "commonjs",
+		"target": "ES5",
+		"lib": ["es2015", "es2017", "dom"],
+		"typeRoots": [
+			"./node_modules/@types"
+		]
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
