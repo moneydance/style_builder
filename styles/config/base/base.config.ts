@@ -53,30 +53,10 @@ export class BaseConfig {
 					]
 				}),
 			},
-			fonts: [
-				{
-					test: /\.svg$/,
-					use: {
-						loader: 'url-loader',
-						options: {
-							limit: 65000,
-							mimetype: 'image/svg+xml',
-							name: 'public/fonts/[name].[ext]'
-						}
-					}
-				},
-				{
-					test: /\.[ot]tf$/,
-					use: {
-						loader: 'url-loader',
-						options: {
-							limit: 65000,
-							mimetype: 'application/octet-stream',
-							name: 'public/fonts/[name].[ext]'
-						},
-					}
-				}
-			],
+			b64inline: {
+				test: /\.(jpe?g|png|ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+				loader: 'base64-inline-loader'
+			}
 		};
 		this.webpack = {
 			entry: this.paths.entry,
@@ -101,7 +81,7 @@ export class BaseConfig {
 			},
 			module: {
 				rules: [
-					this.rules.css, ...this.rules.fonts
+					this.rules.css, this.rules.b64inline
 				]
 			},
 			plugins: [

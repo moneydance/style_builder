@@ -31,10 +31,10 @@
 		"webpack": "3.3.0",
 		"html-webpack-plugin": "2.29.0",
 		"extract-text-webpack-plugin": "3.0.0",
-		"compass-mixins": "0.12.10",
 		"resolve-url-loader": "2.1.0",
 		"url-loader": "0.5.9",
-		"file-loader": "0.11.2"
+		"file-loader": "0.11.2",
+		"base64-inline-loader": "1.1.0"
 	},
 	"engine": "node >= 0.10.x"
 }
