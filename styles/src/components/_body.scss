@@ -1,6 +1,0 @@
-@import 'core/shared';
-
-body {
-	@include DefaultFont;
-	line-height: $line-height;
-}

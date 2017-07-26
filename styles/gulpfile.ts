@@ -13,6 +13,8 @@ switch (env) {
 	case "PROD":
 		new ProdGulpFile(new ProdConfig());
 		break;
+	default:
+		console.log("Please set your ENV environment variable to either DEV or PROD")
 }
 
 

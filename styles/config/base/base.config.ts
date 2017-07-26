@@ -19,7 +19,8 @@ export class BaseConfig {
 		this.paths = {
 			src: { path: path.join(this.baseDir, 'src/') },
 			entry: {
-				main: path.join(this.baseDir, 'src/main.scss'),
+				default: path.join(this.baseDir, 'src/themes/default.scss'),
+				crazy: path.join(this.baseDir, 'src/themes/crazy.scss')
 			},
 			compass: { path: path.join(this.baseDir, 'node_modules/compass-mixins/lib') },
 			ignored: { path: /node_modules/ },
